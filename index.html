@@ -137,7 +137,7 @@ color:var(–dark); line-height:1.08; margin-bottom:20px;
 font-size:14px; font-weight:300; line-height:1.8;
 color:var(–muted); max-width:480px;
 }
-.sec-body-light { color:rgba(245,239,230,0.6); }
+.sec-body-light { color:rgba(245,239,230,0.9); }
 
 /* ===== TIMELINE ===== */
 .timeline {
@@ -159,10 +159,11 @@ display:grid; grid-template-columns:1fr 1fr; min-height:640px;
 .wellness-content {
 background:var(–dark); padding:80px 64px;
 display:flex; flex-direction:column; justify-content:center;
+min-height:400px;
 }
 .wellness-list { margin-top:32px; list-style:none; }
 .wellness-list li {
-font-size:13px; font-weight:300; color:rgba(245,239,230,0.75);
+font-size:13px; font-weight:300; color:#F5EFE6;
 padding:12px 0; border-bottom:1px solid rgba(245,239,230,0.07);
 display:flex; align-items:center; gap:12px;
 }
@@ -189,14 +190,14 @@ font-size:52px; color:var(–dark); margin-bottom:4px;
 }
 .plan.vip .plan-price { color:var(–linen); }
 .plan-per { font-size:11px; color:var(–muted); margin-bottom:28px; }
-.plan.vip .plan-per { color:rgba(245,239,230,0.4); }
+.plan.vip .plan-per { color:rgba(245,239,230,0.7); }
 .plan ul { list-style:none; }
 .plan ul li {
 font-size:12px; font-weight:300; color:var(–muted);
 padding:8px 0; border-bottom:1px solid rgba(184,147,90,0.1);
 display:flex; align-items:center; gap:10px;
 }
-.plan.vip ul li { color:rgba(245,239,230,0.75); border-color:rgba(245,239,230,0.07); }
+.plan.vip ul li { color:#F5EFE6; border-color:rgba(245,239,230,0.15); }
 .plan ul li::before { content:”—”; color:var(–gold); font-size:11px; }
 
 /* ===== TEAM ===== */
@@ -256,15 +257,15 @@ background:var(–dark); padding:70px 48px 36px;
 display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:48px;
 }
 footer img { height:30px; margin-bottom:16px; opacity:0.85; }
-.foot-desc { font-size:12px; font-weight:300; color:rgba(245,239,230,0.35); line-height:1.7; }
+.foot-desc { font-size:12px; font-weight:300; color:rgba(245,239,230,0.75); line-height:1.7; }
 .foot-col h4 { font-size:8px; letter-spacing:3px; text-transform:uppercase; color:var(–gold); margin-bottom:16px; }
-.foot-col a { display:block; font-size:13px; font-weight:300; color:rgba(245,239,230,0.4); margin-bottom:9px; transition:color 0.2s; }
+.foot-col a { display:block; font-size:13px; font-weight:300; color:rgba(245,239,230,0.75); margin-bottom:9px; transition:color 0.2s; }
 .foot-col a:hover { color:var(–linen); }
 .foot-bottom {
 grid-column:1/-1; border-top:1px solid rgba(245,239,230,0.06);
 padding-top:24px; display:flex; justify-content:space-between; align-items:center;
 }
-.foot-bottom p { font-size:9px; letter-spacing:2px; color:rgba(245,239,230,0.18); text-transform:uppercase; }
+.foot-bottom p { font-size:9px; letter-spacing:2px; color:rgba(245,239,230,0.5); text-transform:uppercase; }
 
 /* ===== RESPONSIVE MOBILE ===== */
 @media (max-width: 768px) {
@@ -296,7 +297,10 @@ nav { padding:14px 20px; }
 /* Wellness mobile — stacked */
 .wellness { grid-template-columns:1fr; min-height:auto; }
 .wellness-photo { height:300px; }
-.wellness-content { padding:48px 24px; }
+.wellness-content { padding:48px 24px; background:var(--dark) !important; }
+.wellness-content .sec-title { color:#F5EFE6 !important; }
+.wellness-content .sec-body { color:rgba(245,239,230,0.85) !important; }
+.wellness-list li { color:#F5EFE6 !important; }
 
 /* Photo split mobile */
 .photo-split { grid-template-columns:1fr; }
@@ -345,7 +349,7 @@ footer { grid-template-columns:1fr; gap:36px; padding:48px 24px 28px; }
   <div class="nav-links">
     <a href="#club">The Club</a>
     <a href="#membership">Membership</a>
-    <a href="mailto:contact@milor.dog">Investors</a>
+    <a href="/cdn-cgi/l/email-protection#3f5c50514b5e5c4b7f525653504d115b5058">Investors</a>
     <a href="https://buy.stripe.com/28E7sMe7H2VI0cvd9n6EU00" target="_blank" class="nav-cta">Reserve Your Spot</a>
   </div>
   <div class="nav-burger" onclick="document.querySelector('.mobile-menu').classList.add('open')">
@@ -359,7 +363,7 @@ footer { grid-template-columns:1fr; gap:36px; padding:48px 24px 28px; }
   <button class="close-btn" onclick="document.querySelector('.mobile-menu').classList.remove('open')">✕</button>
   <a href="#club" onclick="document.querySelector('.mobile-menu').classList.remove('open')">The Club</a>
   <a href="#membership" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Membership</a>
-  <a href="mailto:contact@milor.dog">Investors</a>
+  <a href="/cdn-cgi/l/email-protection#8ae9e5e4feebe9fecae7e3e6e5f8a4eee5ed">Investors</a>
   <a href="https://buy.stripe.com/28E7sMe7H2VI0cvd9n6EU00" target="_blank" class="mobile-cta">Reserve Your Spot</a>
 </div>
 
@@ -489,7 +493,7 @@ footer { grid-template-columns:1fr; gap:36px; padding:48px 24px 28px; }
     </div></div>
     <div class="team-card dark"><div class="team-info">
       <p class="team-init" style="color:rgba(184,147,90,0.2);">M</p>
-      <p class="team-name"><a href="mailto:contact@milor.dog" style="color:var(--linen);">Join the Team →</a></p>
+      <p class="team-name"><a href="/cdn-cgi/l/email-protection#81e2eeeff5e0e2f5c1ece8edeef3afe5eee6" style="color:var(--linen);">Join the Team →</a></p>
       <p class="team-role">We're building something exceptional.</p>
     </div></div>
   </div>
@@ -531,14 +535,5 @@ footer { grid-template-columns:1fr; gap:36px; padding:48px 24px 28px; }
   <div class="foot-col">
     <h4>Contact</h4>
     <a href="https://milor.dog" target="_blank">milor.dog</a>
-    <a href="mailto:contact@milor.dog">Investors</a>
-    <a href="mailto:contact@milor.dog">Press</a>
-  </div>
-  <div class="foot-bottom">
-    <p>© 2026 Milor — All rights reserved</p>
-    <p>Members Only. Dogs First.</p>
-  </div>
-</footer>
-
-</body>
-</html>
+    <a href="/cdn-cgi/l/email-protection#bdded2d3c9dcdec9fdd0d4d1d2cf93d9d2da">Investors</a>
+    <a href="/cdn-cgi/l/email-protection#94f7fb
