@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - MILOR</title>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Jost',sans-serif; background:#F5EFE6; color:#1C1208; }
+nav { display:flex; justify-content:space-between; align-items:center; padding:20px 48px; background:#F5EFE6; border-bottom:1px solid rgba(184,147,90,0.2); position:sticky; top:0; }
+.logo { font-size:10px; font-weight:500; letter-spacing:4px; color:#1C1208; }
+.back { font-size:9px; letter-spacing:3px; text-transform:uppercase; color:#B8935A; text-decoration:none; }
+.wrap { max-width:760px; margin:0 auto; padding:72px 48px 96px; }
+.tag { font-size:9px; letter-spacing:4px; text-transform:uppercase; color:#B8935A; margin-bottom:12px; }
+h1 { font-family:Georgia,serif; font-style:italic; font-size:48px; color:#1C1208; margin-bottom:12px; font-weight:normal; }
+.date { font-size:11px; color:#7A6A55; margin-bottom:56px; padding-bottom:32px; border-bottom:1px solid rgba(184,147,90,0.2); }
+.sec { margin-bottom:48px; padding-bottom:48px; border-bottom:1px solid rgba(184,147,90,0.15); }
+.num { font-size:9px; letter-spacing:3px; text-transform:uppercase; color:#B8935A; margin-bottom:10px; }
+h2 { font-size:16px; font-weight:500; letter-spacing:1px; color:#1C1208; margin-bottom:18px; text-transform:uppercase; }
+p { font-size:14px; font-weight:300; line-height:1.85; color:#7A6A55; margin-bottom:16px; }
+strong { font-weight:500; color:#1C1208; }
+ul { list-style:none; margin:16px 0; }
+ul li { font-size:14px; font-weight:300; color:#7A6A55; padding:8px 0; border-bottom:1px solid rgba(184,147,90,0.1); display:flex; gap:10px; }
+ul li::before { content:"—"; color:#B8935A; }
+footer { display:block; text-align:center; padding:32px; background:#1C1208; font-size:10px; letter-spacing:2px; text-transform:uppercase; color:rgba(245,239,230,0.4); }
+</style>
+</head>
+<body>
+<nav>
+  <span class="logo">MILOR</span>
+  <a href="https://milordog.github.io/Milor" class="back">Back to site</a>
+</nav>
+<div class="wrap">
+  <p class="tag">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="date">Last updated: March 2026 · Miami-Dade County, Florida</p>
+  <div class="sec">
+    <p class="num">Section 1</p>
+    <h2>Information We Collect</h2>
+    <p>When you reserve a founding membership, we collect: full name, email, phone, billing information (via Stripe), dog details, and business name if applicable.</p>
+  </div>
+  <div class="sec">
+    <p class="num">Section 2</p>
+    <h2>How We Use Your Information</h2>
+    <p>Your data is used solely to process your reservation, communicate membership updates, and comply with legal obligations. We never use your data for unrelated purposes.</p>
+  </div>
+  <div class="sec">
+    <p class="num">Section 3</p>
+    <h2>Payment Processing</h2>
+    <p>All payments are processed securely through <strong>Stripe</strong>. MILOR does not store credit card information. See stripe.com/privacy for details.</p>
+  </div>
+  <div class="sec">
+    <p class="num">Section 4</p>
+    <h2>Data Sharing</h2>
+    <p>We do <strong>not</strong> sell or share your data with third parties, except payment processors (Stripe) or when required by law.</p>
+  </div>
+  <div class="sec">
+    <p class="num">Section 5</p>
+    <h2>Your Rights</h2>
+    <p>You may access, correct, or request deletion of your data at any time by contacting <strong>contact@milor.dog</strong></p>
+  </div>
+  <div class="sec">
+    <p class="num">Section 6</p>
+    <h2>Contact</h2>
+    <p><strong>MILOR / JCN Technologies</strong><br>100 East Flagler Street, Miami, FL 33131<br>contact@milor.dog · +1 786 384 0080</p>
+  </div>
+</div>
+<footer>2026 MILOR · Members Only. Dogs First. · Miami Design District, FL 33137</footer>
+</body>
+</html>
