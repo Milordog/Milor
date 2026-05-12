@@ -1,71 +1,232 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms and Conditions - MILOR</title>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<title>Milor — Terms & Conditions</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'Jost',sans-serif; background:#F5EFE6; color:#1C1208; }
-nav { display:flex; justify-content:space-between; align-items:center; padding:20px 48px; background:#F5EFE6; border-bottom:1px solid rgba(184,147,90,0.2); position:sticky; top:0; }
-.logo { font-size:10px; font-weight:500; letter-spacing:4px; color:#1C1208; }
-.back { font-size:9px; letter-spacing:3px; text-transform:uppercase; color:#B8935A; text-decoration:none; }
-.wrap { max-width:760px; margin:0 auto; padding:72px 48px 96px; }
-.tag { font-size:9px; letter-spacing:4px; text-transform:uppercase; color:#B8935A; margin-bottom:12px; }
-h1 { font-family:Georgia,serif; font-style:italic; font-size:48px; color:#1C1208; margin-bottom:12px; font-weight:normal; }
-.date { font-size:11px; color:#7A6A55; margin-bottom:56px; padding-bottom:32px; border-bottom:1px solid rgba(184,147,90,0.2); }
-.sec { margin-bottom:48px; padding-bottom:48px; border-bottom:1px solid rgba(184,147,90,0.15); }
-.num { font-size:9px; letter-spacing:3px; text-transform:uppercase; color:#B8935A; margin-bottom:10px; }
-h2 { font-size:16px; font-weight:500; letter-spacing:1px; color:#1C1208; margin-bottom:18px; text-transform:uppercase; }
-p { font-size:14px; font-weight:300; line-height:1.85; color:#7A6A55; margin-bottom:16px; }
-strong { font-weight:500; color:#1C1208; }
-.box { background:rgba(184,147,90,0.1); border-left:3px solid #B8935A; padding:16px 20px; margin:20px 0; font-size:13px; color:#1C1208; line-height:1.7; }
-footer { display:block; text-align:center; padding:32px; background:#1C1208; font-size:10px; letter-spacing:2px; text-transform:uppercase; color:rgba(245,239,230,0.4); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+background: #F5EFE6;
+color: #1C1208;
+font-family: ‘Montserrat’, sans-serif;
+font-weight: 300;
+min-height: 100vh;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 28px 48px;
+border-bottom: 1px solid rgba(184,147,90,0.2);
+background: #F5EFE6;
+position: sticky;
+top: 0;
+z-index: 10;
+}
+
+.nav-logo {
+font-family: ‘Montserrat’, sans-serif;
+font-size: 13px;
+font-weight: 500;
+letter-spacing: 0.3em;
+color: #1C1208;
+text-decoration: none;
+}
+
+.nav-back {
+font-size: 9px;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: #B8935A;
+text-decoration: none;
+}
+
+.nav-back:hover { text-decoration: underline; }
+
+.container {
+max-width: 680px;
+margin: 0 auto;
+padding: 80px 48px 120px;
+}
+
+.hero-label {
+font-size: 9px;
+letter-spacing: 0.4em;
+text-transform: uppercase;
+color: #B8935A;
+margin-bottom: 20px;
+}
+
+.hero-title {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: clamp(48px, 8vw, 72px);
+font-weight: 300;
+font-style: italic;
+line-height: 1.05;
+color: #1C1208;
+margin-bottom: 20px;
+}
+
+.hero-meta {
+font-size: 11px;
+color: rgba(28,18,8,0.45);
+letter-spacing: 0.08em;
+margin-bottom: 60px;
+}
+
+.divider {
+border: none;
+border-top: 1px solid rgba(184,147,90,0.25);
+margin: 52px 0;
+}
+
+.section-label {
+font-size: 8px;
+letter-spacing: 0.4em;
+text-transform: uppercase;
+color: #B8935A;
+margin-bottom: 16px;
+}
+
+.section-title {
+font-size: 13px;
+font-weight: 500;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+color: #1C1208;
+margin-bottom: 20px;
+}
+
+.section-body {
+font-size: 14px;
+line-height: 1.85;
+color: rgba(28,18,8,0.7);
+letter-spacing: 0.02em;
+}
+
+.section-body strong {
+color: #1C1208;
+font-weight: 500;
+}
+
+.highlight {
+background: rgba(184,147,90,0.08);
+border-left: 3px solid #B8935A;
+padding: 20px 24px;
+margin-top: 20px;
+border-radius: 0 2px 2px 0;
+}
+
+.highlight p {
+font-size: 13px;
+line-height: 1.8;
+color: rgba(28,18,8,0.75);
+}
+
+footer {
+background: #1C1208;
+color: rgba(245,239,230,0.45);
+text-align: center;
+padding: 32px 48px;
+font-size: 9px;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+nav { padding: 20px 24px; }
+.container { padding: 52px 24px 80px; }
+}
 </style>
+
 </head>
 <body>
+
 <nav>
-  <span class="logo">MILOR</span>
-  <a href="https://milordog.github.io/Milor" class="back">Back to site</a>
+  <a href="/index.html" class="nav-logo">MILOR</a>
+  <a href="/index.html" class="nav-back">Back to Site</a>
 </nav>
-<div class="wrap">
-  <p class="tag">Legal</p>
-  <h1>Terms &amp; Conditions</h1>
-  <p class="date">Last updated: March 2026 · Miami-Dade County, Florida</p>
-  <div class="sec">
-    <p class="num">Section 1</p>
-    <h2>Acceptance of Terms</h2>
-    <p>By accessing <strong>milor.dog</strong> and paying a reservation deposit, you agree to be bound by these Terms and Conditions and all applicable laws of the State of Florida.</p>
+
+<div class="container">
+
+  <p class="hero-label">Legal</p>
+  <h1 class="hero-title">Terms &<br>Conditions</h1>
+  <p class="hero-meta">Last updated: May 2026 · Miami-Dade County, Florida</p>
+
+  <hr class="divider">
+
+  <!-- SECTION 1 -->
+
+  <p class="section-label">Section 1</p>
+  <h2 class="section-title">Acceptance of Terms</h2>
+  <div class="section-body">
+    <p>By accessing <strong>milor.dog</strong> and submitting a membership application, you agree to be bound by these Terms and Conditions and all applicable laws of the State of Florida.</p>
   </div>
-  <div class="sec">
-    <p class="num">Section 2</p>
-    <h2>Reservation Deposit</h2>
-    <p><strong>Purpose:</strong> The $1,000 deposit secures a priority founding membership spot at MILOR, opening in Miami Design District in early 2027.</p>
-    <p><strong>Credit:</strong> Applied in full toward your $5,000 initiation fee at opening.</p>
-    <div class="box"><strong>Refund Policy:</strong> Full refund within 14 days of payment. After that, non-refundable but transferable. Fully refundable if the club fails to open within 36 months.</div>
+
+  <hr class="divider">
+
+  <!-- SECTION 2 -->
+
+  <p class="section-label">Section 2</p>
+  <h2 class="section-title">Membership Eligibility</h2>
+  <div class="section-body">
+    <p>All dogs must provide proof of Rabies, DHPP, and Bordetella vaccinations and pass a behavioral assessment. Milor reserves the right to deny membership to any dog deemed aggressive or unsuitable for a shared club environment.</p>
+    <div class="highlight">
+      <p><strong>Membership is by invitation only.</strong> Submitting an application does not guarantee membership. All applications are reviewed individually by the Milor founding team.</p>
+    </div>
   </div>
-  <div class="sec">
-    <p class="num">Section 3</p>
-    <h2>Membership Eligibility</h2>
-    <p>All dogs must provide proof of Rabies, DHPP, and Bordetella vaccinations and pass a behavioral assessment. We reserve the right to deny membership to aggressive dogs.</p>
+
+  <hr class="divider">
+
+  <!-- SECTION 3 -->
+
+  <p class="section-label">Section 3</p>
+  <h2 class="section-title">Initiation Fee</h2>
+  <div class="section-body">
+    <p>The initiation fee is available upon request and communicated directly to approved applicants. Pricing may vary depending on membership tier and location.</p>
   </div>
-  <div class="sec">
-    <p class="num">Section 4</p>
-    <h2>Limitation of Liability</h2>
-    <p>You voluntarily assume all risks of off-leash socialization. You release MILOR and JCN Technologies from liability for injuries or damages, except in cases of gross negligence under Florida law.</p>
+
+  <hr class="divider">
+
+  <!-- SECTION 4 -->
+
+  <p class="section-label">Section 4</p>
+  <h2 class="section-title">Limitation of Liability</h2>
+  <div class="section-body">
+    <p>You voluntarily assume all risks of off-leash socialization. You release MILOR and JCN Technologies LLC from liability for injuries or damages, except in cases of gross negligence under Florida law.</p>
   </div>
-  <div class="sec">
-    <p class="num">Section 5</p>
-    <h2>Privacy</h2>
-    <p>Your data is used solely for membership management and will not be sold to third parties.</p>
+
+  <hr class="divider">
+
+  <!-- SECTION 5 -->
+
+  <p class="section-label">Section 5</p>
+  <h2 class="section-title">Privacy</h2>
+  <div class="section-body">
+    <p>Your data is used solely for membership management and will not be sold to third parties. By submitting your application, you consent to being contacted by the Milor team regarding your candidacy.</p>
   </div>
-  <div class="sec">
-    <p class="num">Section 6</p>
-    <h2>Governing Law</h2>
-    <p>Governed by Florida law. Disputes resolved in Miami-Dade County courts. Contact: contact@milor.dog</p>
+
+  <hr class="divider">
+
+  <!-- SECTION 6 -->
+
+  <p class="section-label">Section 6</p>
+  <h2 class="section-title">Governing Law</h2>
+  <div class="section-body">
+    <p>Governed by Florida law. Disputes resolved in Miami-Dade County courts. Contact: <strong>contact@milor.dog</strong></p>
   </div>
+
 </div>
-<footer>2026 MILOR · Members Only. Dogs First. · Miami Design District, FL 33137</footer>
+
+<footer>
+  2026 MILOR · Members Only. Dogs First. · Miami Design District, FL 33137
+</footer>
+
 </body>
 </html>
